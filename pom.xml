@@ -69,9 +69,11 @@
     <javassist.version>3.23.1-GA</javassist.version>
     <xerces.version>2.12.0.SP02</xerces.version>
     <artemis.version>2.6.3.jbossorg-00014</artemis.version>
+    <netty.all.version>4.1.29.Final</netty.all.version>
     <xnio.version>3.6.5.Final</xnio.version>
     <jboss.jaxws.api.version>1.0.0.Final</jboss.jaxws.api.version>
     <jsr181.api.version>1.0-MR1</jsr181.api.version>
+    <javax.json.version>1.1.2</javax.json.version>
     <jboss.logging.tools.version>2.1.0.Final</jboss.logging.tools.version>
     <junit.version>4.12</junit.version>
   </properties>
@@ -254,6 +256,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.json</artifactId>
+        <version>${javax.json.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.jboss.remotingjmx</groupId>
         <artifactId>remoting-jmx</artifactId>
         <version>${remoting-jmx.version}</version>
@@ -282,6 +290,12 @@
         <groupId>org.apache.activemq</groupId>
         <artifactId>artemis-jms-client</artifactId>
         <version>${artemis.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-all</artifactId>
+        <version>${netty.all.version}</version>
       </dependency>
 
       <dependency>
